@@ -10,6 +10,8 @@ import TemplateDetail from "./pages/TemplateDetail";
 import CrossValidation from "./pages/CrossValidation";
 import FormFilling from "./pages/FormFilling";
 import NotFound from "./pages/NotFound";
+import DigitizeAILanding from "./pages/LandingPage";
+
 
 const queryClient = new QueryClient();
 
@@ -20,7 +22,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Index />} />
+          <Route path="/" element={<DigitizeAILanding />} />
           <Route path="/extraction" element={<Layout><Extraction /></Layout>} />
           <Route path="/extraction/:templateId" element={<Layout><TemplateDetail /></Layout>} />
           <Route path="/cross-validation" element={<Layout><CrossValidation /></Layout>} />
