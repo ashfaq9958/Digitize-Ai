@@ -225,16 +225,14 @@ export function CreateTemplateModal({
                   <div className="space-y-2">
                     <Label>Field Name</Label>
                     <Input
-                      value={field.length !== undefined ? field.length : ""}
-                      onChange={(e) => {
-                        const value = e.target.value;
-                        updateField(field.id, {
-                          length: value ? parseInt(value) : undefined,
-                        });
-                      }}
+                      value={field.name}
+                      onChange={(e) =>
+                        updateField(field.id, { name: e.target.value })
+                      }
                       placeholder="e.g., Total Amount"
                     />
                   </div>
+
                   <div className="space-y-2">
                     <Label>Type</Label>
                     <Select
