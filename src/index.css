@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌐 Professional AI Theme - HSL Based */
+
+@layer base {
+  :root {
+    --background: 240 10% 4%;
+    --foreground: 0 0% 100%;
+
+    --card: 240 6% 7%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 5% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 258 100% 65%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 3.7% 20%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 240 3.7% 20%;
+    --muted-foreground: 240 5% 65%;
+
+    --accent: 258 100% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 4% 20%;
+    --input: 240 4% 20%;
+    --ring: 258 100% 65%;
+
+    /* ✨ Gradients */
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(258 100% 65%),
+      hsl(280 80% 65%)
+    );
+    --gradient-ai: linear-gradient(135deg, hsl(258 100% 65%), hsl(290 80% 60%));
+    --gradient-card: linear-gradient(135deg, hsl(240 6% 7%), hsl(240 4% 12%));
+
+    /* ☁️ Shadows */
+    --shadow-glow: 0 0 50px hsl(258 100% 65% / 0.4);
+    --shadow-elegant: 0 12px 32px -8px hsl(0 0% 0% / 0.45);
+
+    --radius: 0.75rem;
+
+    /* Sidebar Design System */
+    --sidebar-background: 240 6% 10%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 258 100% 65%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 4% 20%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 240 4% 25%;
+    --sidebar-ring: 258 100% 65%;
+  }
+
+  .dark {
+    --background: 240 6% 6%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 5% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 5% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 258 100% 65%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 4% 20%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 4% 20%;
+    --muted-foreground: 240 5% 65%;
+
+    --accent: 258 100% 65%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5% 25%;
+    --input: 240 5% 25%;
+    --ring: 258 100% 65%;
+
+    --sidebar-background: 240 6% 8%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 258 100% 65%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 4% 15%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 240 4% 20%;
+    --sidebar-ring: 258 100% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-primary text-white shadow-glow hover:opacity-90 transition;
+  }
+
+  .card-elevated {
+    @apply bg-card border border-border shadow-elegant rounded-xl;
+  }
+}
