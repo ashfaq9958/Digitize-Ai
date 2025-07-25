@@ -490,7 +490,7 @@ export default function DigitizeAILanding() {
           </div>
 
           <div className="border-t border-gray-800 pt-8 text-center text-gray-500">
-            <p>&copy; 2024 Digitize AI. All rights reserved.</p>
+            <p>&copy; 2025 Digitize AI. All rights reserved.</p>
           </div>
         </div>
       </footer>
